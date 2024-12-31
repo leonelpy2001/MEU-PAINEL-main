@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Mada", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bacground: #bec4eb80;
+
+}
+
+body {
+    background-color: var(--body-bacground);
+
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 780px;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+main .div-content {
+    position: relative;
+    animation-name: subir-titulo;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+
+}
+
+@keyframes subir-titulo {
+    0% {
+        top: 50px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+main .div-content h1 {
+    margin-bottom: 20px;
+    font-size: 74px;
+    padding: 0;
+    line-height: 80px;
+    font-weight: bolder;
+}
+
+main .div-content p {
+
+    line-height: 32px;
+    font-size: 26px;
+    padding: 0;
+    font-weight: lighter;
+
+}
+
+
+.div-grid {
+    margin: 80px 0 40px 0;
+    background-color: #ffffff58;
+    width: 100%;
+    border-radius: 45px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.085);
+    padding: 25px;
+    gap: 40px;
+
+}
+
+main .div-grid {
+    position: relative;
+    animation-name: subir-grid;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+
+}
+
+@keyframes subir-grid {
+    0% {
+        top: 20px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.div-grid figure {
+    cursor: pointer;
+    padding: 7px;
+    background-color: white;
+    border-radius: 20px;
+
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.085);
+}
+
+.div-grid figure:hover {
+    position: relative;
+    animation-name: subir;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes subir {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 10px;
+
+    }
+
+    100% {
+        bottom: 10px;
+        box-shadow: 0 1px 10px 0px rgba(0, 0, 0, 0.058);
+    }
+}
+
+.div-grid figure img {
+    object-fit: contain;
+    display: block;
+    width: 100%;
+    margin: auto;
+
+}
+
+.section-grid-btn button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 8px;
+    outline: none;
+
+    right: 0;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 15px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.085);
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgb(137, 137, 222);
+}
+
+.section-grid-btn button:hover {
+    transition: 0.5s;
+    padding: 8px 25px;
+    
+}

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@200..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
+    font-family: "Mada", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --body-bacground: #bec4eb80;
+
+}
+
+body {
+    background-color: var(--body-bacground);
+
+}
+
+
+body main {
+
+    padding: 50px 25px 25px 25px;
+    background-color: #ffffff58;
+
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.159);
+    width: 600px;
+    border-radius: 41px;
+    margin: 60px auto 0 auto;
+    animation-name: subir-main;
+    animation-duration: 2s;
+}
+@keyframes subir-main {
+    0% {
+        margin-top: 120px;
+    }
+
+    100% {
+      margin-top: 60px;
+    }
+}
+
+body main .div-p-btn {
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+body main .div-p-btn p {
+
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: lighter;
+}
+
+
+
+body main .div-p-btn a{
+    
+    text-decoration: none;
+}  
+body main .div-p-btn button i {
+    font-size:19px;
+}
+
+body main .div-p-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.085);
+    background-color: rgb(51, 170, 255);
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    height: 50px;
+    padding: 8px 35px;
+    border-radius: 18px;
+    border: none;
+    transition: 0.5s;
+}
+body main .div-p-btn button i {
+    font-size:19px;
+}
+
+
+body main .div-p-btn button:hover {
+    transition: 0.5s;
+    padding: 8px 45px;
+    
+}
+hr {
+    border-bottom: none;
+    opacity: 0.19;
+}
+
+.div-content {
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.159);
+    border-radius: 22px;
+    padding: 60px 0 0 0;
+    background-color: white;
+}
+
+.div-content-rolo {
+    border-radius: 0 0 22px 22px;
+    padding: 20px;
+    background-color: white;
+}
+
+
+.div-content-rolo {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 0 0 22px 22px;
+    padding: 20px;
+
+    background-color: white;
+}
+
+.div-content-rolo article {
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.104);
+    border-radius: 20px;
+    line-height: 24px;
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.div-content-rolo article:hover {
+  
+    border: 1px solid rgba(120, 104, 104, 0.652);
+ transition: 0.5s;
+}
+
+
+.div-content-rolo a {
+    text-decoration: none;
+    color: black;
+}
+
+.div-content-rolo article img {
+    display: block;
+    width: 80px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.104);
+
+}
+
+
+.div-content-rolo article .div-art-content p {
+    font-weight: lighter;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+
+    width: 260px;
+
+}
+
+
+
+.div-content-rolo span {
+    font-weight: bolder;
+    font-size: 17px;
+   line-height: 35px;
+   margin-bottom: 5px;
+    border-bottom: 2px dotted rgba(0, 0, 0, 0.136);
+
+    opacity: 0.6;
+
+}
